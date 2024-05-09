@@ -13,14 +13,16 @@ public class Program
 
 public record Product(long ProductId, string ProductName, double Price, int Stock, bool IsActive);
 
-public class ExampleModel
-{
-    public ExampleModel(long id, string name)
-    {
-        UserId = id;
-        UserName = name;
-    }
+//public class ExampleModel
+//{
+//    public ExampleModel(long id, string name)
+//    {
+//        UserId = id;
+//        UserName = name;
+//    }
 
-    public long UserId { get; set; }
-    public string UserName { get; set; } = null!;
-}
+//    public long UserId { get; set; }
+//    public string UserName { get; set; } = null!;
+//}
+
+public record ExampleModel(long UserId, string UserName);
